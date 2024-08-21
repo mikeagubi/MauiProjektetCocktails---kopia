@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiProjektetCocktails.MainPage">
+
+
+    <Grid>
+
+        <Image Source="cocktails.jpg"
+               Aspect="Fill"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Opacity="0.5">
+        </Image>
+
+        <ScrollView>
+            <VerticalStackLayout
+                Padding="30"
+                Spacing="10">
+
+     
+                <Label
+                    Text="Cocktails Master"
+                    HorizontalOptions="Center"
+                    FontSize="70"
+                    FontAttributes="Bold"
+                    FontFamily="Courier New"
+                    TextColor="Gainsboro"
+                    BackgroundColor="Black"
+                    Opacity="0.9">
+                </Label>
+                <Label
+                    Text="Discover"
+                    FontSize="50"
+                    FontAttributes="Bold"
+                    FontFamily="Courier New"
+                    TextColor="Gainsboro"
+                    Margin="0,200,0,0"
+                    Opacity="0.8">
+                </Label>
+                <Label
+                    Text="Create"
+                    FontSize="50"
+                    FontAttributes="Bold"
+                    FontFamily="Courier New"
+                    TextColor="Gainsboro"
+                    Opacity="0.7">
+                </Label>
+                <Label
+                    Text="Enjoy"
+                    FontSize="50"
+                    FontAttributes="Bold"
+                    FontFamily="Courier New"
+                    TextColor="Gainsboro"
+                    Opacity="0.6">
+                </Label>
+                <Label
+                    Text="Cocktails"
+                    FontSize="50"
+                    FontAttributes="Bold"
+                    FontFamily="Courier New"
+                    TextColor="Gainsboro"
+                    Opacity="0.5">
+                    
+                </Label>
+
+                <Label
+                    Text="In Cocktails Master"
+                    TextColor="Gainsboro"
+                    BackgroundColor="Black"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    FontFamily="Courier New"
+                    Opacity="0.7"
+                    Margin="0,70,0,0"
+                    Style="{StaticResource SubHeadline}">
+                </Label>
+
+                <Entry
+                    x:Name="NameEntry"
+                    BackgroundColor="Black"
+                    WidthRequest="300"
+                    Placeholder="Enter your first name">
+                </Entry>
+
+                <Button
+                    x:Name="EnterBtn"
+                    Text="Let's Cocktail" 
+                    FontFamily="Verdana"
+                    FontAttributes="Bold"
+                    BackgroundColor="ForestGreen"
+                    WidthRequest="200" 
+                    Clicked="OnClickedGoMenuPage">
+                </Button>
+            
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+    
+</ContentPage>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiProjektetCocktails.Views.MenuPage"
+             Title="MenuPage">
+
+
+    <Grid>
+
+            <Image Source="cocktails.jpg"
+               Aspect="Fill"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Opacity="0.5">
+            </Image>
+
+        <ScrollView>
+            <VerticalStackLayout
+                Padding="30"
+                Spacing="10">
+
+
+                <Label
+                    Text="Cocktal Master"
+                    HorizontalOptions="Center"
+                    FontSize="70"
+                    FontAttributes="Bold"
+                    FontFamily="Courier New"
+                    TextColor="Gainsboro"
+                    BackgroundColor="Black"
+                    Opacity="0.9">
+                </Label>
+
+                <Label 
+                    x:Name="WelcomeLabel" 
+                    Text="Welcome!" 
+                    HorizontalOptions="Center"
+                    FontFamily="Courier New"
+                    FontSize="25"
+                    TextColor="Gainsboro"
+                    Opacity="0.9"
+                    BackgroundColor="Black"
+                    FontAttributes="Bold"
+                    Margin="0,330,0,0">
+                </Label>
+
+                <Button
+                    x:Name="popularbtn"
+                    Text="Popular Drinks"
+                    WidthRequest="200"
+                    HorizontalOptions="Center"
+                    FontAttributes="Bold"
+                    BackgroundColor="ForestGreen"
+                    BorderWidth="3"
+                    BorderColor="Black"
+                    TextColor="Black"
+                    Padding="10">
+                </Button>
+                <Label
+                    Text="Or"
+                    HorizontalOptions="Center"
+                    FontFamily="Courier New"
+                    FontAttributes="Bold"
+                    BackgroundColor="Black">
+                </Label>
+
+                <Entry
+                    x:Name="SearchDrink"
+                    Text=""
+                    BackgroundColor="Black"
+                    WidthRequest="200"
+                    Placeholder="Enter Drink Name">
+                </Entry>
+                
+                <Button
+                    x:Name="SearchBtn"
+                    Clicked="OnSearchBtnClicked"
+                    Text="Shake it Up"
+                    WidthRequest="100"
+                    HorizontalOptions="Center"
+                    BackgroundColor="ForestGreen"
+                    BorderWidth="3"
+                    BorderColor="Black"
+                    TextColor="Black"
+                    Padding="10">
+                </Button>
+
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+    
+</ContentPage>
